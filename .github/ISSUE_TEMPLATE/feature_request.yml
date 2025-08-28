@@ -1,0 +1,75 @@
+name: Feature Request
+description: Suggest a new feature for this project
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! 🚀
+        
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: "I would like to see..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions you've considered
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: How complex do you think this feature is to implement?
+      options:
+        - Simple (few hours)
+        - Medium (1-2 days)
+        - Complex (1-2 weeks)
+        - Very Complex (1+ months)
+        - Not sure
+        
+  - type: checkboxes
+    id: willing-to-implement
+    attributes:
+      label: Implementation
+      description: Are you willing to help implement this feature?
+      options:
+        - label: I can implement this feature myself
+        - label: I can help with testing
+        - label: I can help with documentation
+        - label: I need someone else to implement this
+        
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any additional context, mockups, or examples
